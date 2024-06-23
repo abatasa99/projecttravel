@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.cdnfonts.com/css/metal-mania-2" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf3268ce76.js" crossorigin="anonymous"></script>
+    <title>Bootstrap demo</title>
+    <style>
+        .logo{
+        font-family: 'Metal Mania', sans-serif;
+        color: #f8b932;
+        }
+        .img-fluid{
+          width: 100%;
+          filter: brightness(40%);
+        }
+        .box{
+          padding: 50px;
+        }
+        .content{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 19%;
+          left: 5%;
+          color: aliceblue;
+        }
+        .content h4{
+          color: #f8b932;
+        }
+        .col h2{
+          text-align: center;        
+        }       
+        .card{
+          left: 5%;
+        }
+        .col-8{
+          padding-top: 15px;
+          
+        }
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 100%;
+        padding: 50px;
+      }
+      .container h1 {
+        text-align: center;
+        padding-top: 10%;
+        margin-bottom: 60px;
+        font-weight: 600;
+        position: relative;
+      }
+      .container h1::after {
+        content: '';
+        background: #f8b932;
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        
+      }
+      /* .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+      } */
+      .service {
+        text-align: center;
+        /* padding: 25px 10px; */
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        background: transparent;
+        transition: transform 0,5, background 0,5s;
+
+      }
+      .service i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #000000;
+      }
+      .service h2 {
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .service:hover {
+        background: #f8b932;
+        color: #000000;
+        transform: scale(1.05);
+      }
+      #footer{
+        background-color: #1f1f1f;
+        color: #ffffff;
+        padding: 60px;
+        
+      }
+      .footer-heading{
+        color: #f8b932; 
+      }
+      footer{
+        background-color: #000000;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  </head>
+  <body  style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PO <span class="logo">HARYADI</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="file:///C:/SEMESTER%202/Web%20Fundamental/Project%20Travel/bagianHome/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/SEMESTER%202/Web%20Fundamental/Project%20Travel/bagianTentang/tentang.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/SEMESTER%202/Web%20Fundamental/Project%20Travel/bagianLayanan/layanan.html">Servis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/SEMESTER%202/Web%20Fundamental/Project%20Travel/bagianKontak/kontak.html">Contack</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img src="bus-2546383_1280.jpg" class="img-fluid" alt="...">   
+    <div class="box">
+      <div class="content">
+        <h2>Lintas Provinsi</h2>
+        <h4>Melayani perjalanan anda antar kota antar provinsi dengan aman dan nyaman </h4>
+      </div>
+      <div class="col">
+        <H2>TIPE BUS LAYANAN KAMI</H2>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card"style="width: 18rem;">
+              <img src="Bus-Pariwisata.jpg" alt="...">
+            </div>
+          </div> 
+          <div class="col-7">
+            <h5>BUS PARIWISATA</h5>
+            <p>Perusahaan kami menyediakan BUS khusus perjalanan wisata baik domestik maupun internasional. Karakteristik BUS ini memiliki fasilitas yang mewah
+              seperti AC, kursi ergonomis, sistem hiburan (TV, audio) dan toilet, BUS ini siap menerima layanan untuk keperluan group wisata, acara perusahaan, atau rombongan besar lainnya. </p>
+        </div> 
+      </div>
+      <div class="row pt-5">
+        <div class="col-4">
+          <div class="card"style="width: 18rem;">
+            <img src="Bus AKAP.jpg" alt="...">
+          </div>
+        </div> 
+        <div class="col-7">
+          <h5>BUS AKAP</h5>
+          <p>Berbeda dari bus yang sebelumnya, BUS AKAP merupakan singkatan dari (Antar Kota Antar Provinsi) bus ini merupakan salah satu jenis layanan bus yang ada di perusahaan kami, yang menghubungkan kota-kota di berbagai provinsi.
+            Bus ini dilengkapi dengan fasilitas yang nyaman, seperti kursi yang bisa di rebahkan, AC, dan layanan makanan, untuk memastikan kenyamanan penumpang selama perjalanan yang panjang.
+          </p>
+      </div> 
+      <div class="row pt-5">
+        <div class="col-4">
+          <div class="card"style="width: 18rem;">
+            <img src="legacy-sr-2-double-decker_20180810_142754.jpg" alt="...">
+          </div>
+        </div> 
+        <div class="col-7">
+          <h5>BUS MALAM</h5>
+          <p>Tak kalah menarik! Perusahaan kami juga menyediakan layanan BUS MALAM, layanan ini digunakan untuk perjalanan jarak jauh agar memungkinkan penumpang bisa tidur selama perjalanan berlangsung.
+            Bus ini beroprasi mulai sore hari dan tiba di tujuan pada pagi hari, Bus ini dilengkapi dengan tempat tidur/kursi yang bisa di rebahkan, bantal, selimut, dan makanan ringan. Tujuan utama Bus Malam ini adalah untuk memaksimalkan efisiensi waktu bagi penumpang
+            yang ingin memanfaatkan waktu perjalanan untuk beristirahat.</p>
+      </div> 
+    </section>
+    <img src="trolley-4693195_1280 copy.jpg" class="mt-5" style="width: 100%;  filter: brightness(40%);">
+
+    <section style="margin-top: -10%;">
+      <div class="container">
+        <h1>LAYANAN KAMI</h1>
+        <div class="row">
+          <div class="service col-lg-4 p-4">
+              <i class="fa-solid fa-tv"></i>
+              <h2>Tv</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service col-lg-4 p-4">
+            <i class="fa-brands fa-bluetooth"></i>
+            <h2>Bluetooth</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service col-lg-4 p-4">
+            <i class="fa-solid fa-toilet"></i>
+            <h2>Toilet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service col-lg-4 p-4">
+            <i class="fa-solid fa-burger"></i>
+            <h2>Makanan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service col-lg-4 p-4">
+            <i class="fa-solid fa-wifi"></i>
+            <h2>Free Wifi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service col-lg-4 p-4">
+            <i class="fa-solid fa-bed"></i>
+            <h2>Tempat Tidur</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+      <div id="footer-top" class="banner-padding ftr-top-grey ftr-text-white">
+        <div class="container">
+          <div class="row text">
+            <div class="col-3 footer-widget ftr-contact offset-1">
+              <h3 class="footer-heading">Hubungi Kami</h3>
+                <ul class="list-unstyled">
+                  <li><span><i class="fa fa-map-marker"></i></span> Jl. Ir.H.Juanda No.1145 </li>
+                  <li style="display:none"><span><i class="fa fa-book"></i></span> Tasikmalaya, 13890</li>
+                  <li><span><i class="fa fa-book pt-3"></i></span> Tasikmalaya, 13890</li>
+                  <li><span><i class="fa fa-phone pt-3"></i></span> +62 085794586552</li>
+                  <li><span><i class="fa fa-envelope pt-3"></i></span><a href="fujiharyadi0@gmail.com" class="text-light link-offset-2 link-underline link-underline-opacity-0" data-cfemail="137a7d757c53727461727e726074617c66633d707c7e"> fujiharyadi0@gmail.com</a></li>
+                </ul>
+                </div>
+              <div class="col-3 offset-1">
+                    <h3 class="footer-heading">Links</h3>
+                      <ul class="list-unstyled">
+                        <li><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="...">Home</a></li>
+                        <li><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="...">Tentang</a></li>
+                        <li><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="file:///C:/SEMESTER%202/Web%20Fundamental/Project%20Travel/bagianLayanan/layanan.html">Servis</a></li>
+                        <li><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="...">Contak</a></li>
+                      </ul>
+                  </div>
+              <div class="col-4">
+                <h3 class="footer-heading">Social Media</h3>
+                  <ul class="social-links list-inline list-unstyled">
+                    <span class="ms-3"><a href="https://www.facebook.com/fuji.haryadi.1?mibextid=ZbWKwL" target="_blank"><span><i class="fa fa-facebook-official text-white" style="font-size:24px"></i></span></a></span>
+                    <span class="ms-3"><a href="https://www.instagram.com/puji_haryadi86?igsh=MXhtYjN1OW5nZnFmdQ==" target="_blank"><span><i class="fa fa-instagram text-white" style="font-size:24px"></i></span></a></span>
+                    <span class="ms-3"><a href="https://www.youtube.com/channel/UCyfyg_Z004XKgRBnEdqyujA"><span><i class="fa fa-youtube-play text-white"  style="font-size:24px"></i></span></a></span>
+                    <span class="ms-3"><a href="..." target="_blank"><span><i class="fa fa-whatsapp text-white" style="font-size:24px"></i></span></a></span>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>     
+  </section>
+
+  <footer style="background-color: #000000; padding: 20px;" >
+    <div id="footer-bottom" class="ftr-bot-black">
+      <div class="container" style="background-color:#000000; padding: 1px;">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+            <p class="text-light">© 2024<a> PO <span class="logo">HARYADI</span></a> All rights reserved.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+            <p class="text-end text-light" >Terms & Condition<span>Privacy Policy</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
