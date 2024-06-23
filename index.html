@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.cdnfonts.com/css/metal-mania-2" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/cf3268ce76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
       .logo {
@@ -86,12 +87,12 @@
     <div class="container pt-4">
       <form class="row g-3">
         <div class="col-md-6">
-          <label for="inputState" class="form-label">Dari</label>
+          <label for="inputState" class="form-label">Dari Mana?</label>
           <input type="dari" class="form-control" id="inputState" placeholder="Kota asal" />
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Tujuan</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Tujuan" />
+          <label for="inputState" class="form-label">Mau Kemana?</label>
+          <input type="mau kemana" class="form-control" id="inputState" placeholder="Tujuan" />
         </div>
         <div class="col-md-6">
           <label for="inputCity" class="form-label">Berangkat</label>
@@ -124,28 +125,28 @@
     <section id="home">
       <div class="container w3-jumbo">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
             <div class="b-feature-block">
               <i class="fa fa-bus fa-4x"></i>
               <h3 class="pt-4">Lebih dari 50 rute</h3>
               <p>Kami telah melayani lebih dari 50 rute dan akan terus bertambah untuk memenuhi kebutuhan transportasi masyarakat.</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500">
             <div class="b-feature-block">
               <span><i class="fa fa-ticket fa-4x"></i></span>
               <h3 class="pt-4">Reservasi</h3>
               <p>Kini semakin mudah untuk melakukan perjalanan dengan PO Haryadi, tiket dapat dipesan secara online.</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1500">
             <div class="b-feature-block">
               <span><i class="fa fa-thumbs-up fa-4x"></i></span>
               <h3 class="pt-4">Kenyamanan</h3>
               <p>Kenyamanan penumpang adalah prioritas dari kami dengan penambahan fasilitas bus yang selalu diperbaharui.</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3">
+          <div class="col-sm-6 col-md-3" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1500">
             <div class="b-feature-block">
               <span><i class="fa fa-bars fa-4x"></i></span>
               <h3 class="pt-4">Layanan</h3>
@@ -232,5 +233,9 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
