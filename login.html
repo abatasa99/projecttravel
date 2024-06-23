@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 300px;
+        margin: 150px;
+      }                     
+      input[type='email'],
+      input[type='password'],
+      input[type='submit'] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+      }
+      #captcha {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .ReloadBtn {
+        background-size: 100%;
+        width: 32px;
+        height: 32px;
+        border: 0px;
+        outline: none;
+        cursor: pointer;
+      }
+      section {
+        background: url(trolley-4693197_1280.jpg) no-repeat;
+        width: 100%;
+        height: auto;
+        background-position: center;
+        
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section>
+      <div class="row align-center justify-content-center">
+        <div class="col-xl-4">
+          <div class="container">
+            <h2 class="text-center">Form Login</h2>
+            <form id="loginForm">
+              <input type="email" name="email" id="inputanEmail" placeholder="Email" required /><br />
+              <input type="password" name="password" id="inputanPassword" placeholder="Password" required /><br />
+              <div class="box row justify-content-center p-2 fs-2 text-decoration-line" id="captcha">
+                <div id="text" class="col-5 justify-content-center"></div>
+                <input type="button" class="ReloadBtn col-auto" onclick="CreateCaptcha()" />
+              </div>
+              <input type="captcha" name="captchaInput" id="inputanCaptcha" placeholder="Masukkan Captcha" required /><br />
+              <input class="btn btn-light btn-lg px-5 mt-3 mb-3 w-100" id="btnLogin" type="button" value="Login" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        var n1 = Math.round(Math.random() * 10);
+        var n2 = Math.round(Math.random() * 10);
+        var captcha = n1 + ' + ' + n2;
+        $('#captcha').text(captcha);
+
+        $('#btnLogin')
+          .button()
+          .click(function () {
+            // alert(eval(captcha));
+            var dbemail = 'fujiharyadi0@gmail.com';
+            var dbpass = 'haryadi1945';
+            var email = $('#inputanEmail').val();
+            var pass = $('#inputanPassword').val();
+            var captcha2 = $('#inputanCaptcha').val();
+
+            console.log('email: ' + email);
+            console.log('password: ' + pass);
+            console.log('captcha: ' + eval(captcha));
+
+            if (dbemail == email && dbpass == pass) {
+              if (eval(captcha) == captcha2) {
+                $(document).ready(function () {
+                  alert('Login Sukses');
+                  $('#btnLogin').click(function () {
+                    window.location.href = 'index.html';
+                  });
+                }); 
+              } else {
+                alert('Ups! Captcha Salah');
+              }
+            } else {
+              alert('Email atau Password Salah');
+            }
+          });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
